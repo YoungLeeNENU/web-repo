@@ -12,13 +12,20 @@ require_once("./insert.php");
   <head>
 	<title>Sign up | Maverick</title>
   </head>
-  <body bgcolor="#171717">
+  <body bgcolor="#00688b">
 	<h1 align="center">
-      <font color = "#f5f5f5">
+      <font color = "#f5f5f5" size = 10>
 		Maverick.
       </font>
     </h1>
 
+    <input type="button"
+    style="width:200px;height:40px; background-color:#f5f5f5; color=#e0eee0"
+    value="SIGN UP" name="bt">
+    <input type="button"
+    style="width:200px;height:40px; background-color:#f5f5f5; color=#e0eee0"
+    value="LOG IN" name="bt">
+    
 	  <script type="text/javascript">
         function checkForm(form)
         {

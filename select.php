@@ -24,14 +24,15 @@ function CheckPswd($name, $pswd, $db, $table) {
 
     while ($row = mysql_fetch_array($result)) {
         $db_pswd = $row['password'];
-        # echo $db_pswd . "<br />";
+        echo $db_pswd . "<br />";
+        echo md5($pswd). "<br />";
         $counter++;
     }
 
     mysql_close($conn);
 
     if ($counter == 1) {
-        if ($db_pswd == $pswd) {
+        if ($db_pswd == md5($pswd)) {
             return true;
         } else {
             return false;

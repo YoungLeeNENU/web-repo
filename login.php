@@ -10,9 +10,9 @@ require_once("./insert.php");
   <head>
 	<title>Log in | Maverick</title>
   </head>
-  <body bgcolor="#171717">
+  <body bgcolor="#00688b">
 	<h1 align="center">
-      <font color = "#f5f5f5">
+      <font color = "#f5f5f5" size = 10>
 		Maverick.
       </font>
     </h1>
