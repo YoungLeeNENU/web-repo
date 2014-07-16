@@ -1,0 +1,19 @@
+* FIXED md5
+CLOSED: [2014-07-14 一 11:01]
+- Use varchar(255) when creating the table
+* DONE password identification
+CLOSED: [2014-07-14 一 11:32]
+* DONE logged in status
+CLOSED: [2014-07-14 一 17:39]
+* DONE safty problem
+CLOSED: [2014-07-15 二 10:43]
+* DONE logged in page
+CLOSED: [2014-07-15 二 16:45]
+* DONE log out
+CLOSED: [2014-07-15 二 16:45]
+* TODO verification code
+* TODO email identification
+* TODO html div
+* TODO cookie
+* TODO ...
+* TODO interface

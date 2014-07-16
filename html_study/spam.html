@@ -1,0 +1,40 @@
+<html>
+  <head>
+
+    <style type = "text/css">
+	 div#bottom{}
+     body { padding:0;
+			margin:0;
+			overflow-x: hidden;
+			background: url(tumblr.gif) center no-repeat;
+			background-size:cover; }
+    </style>
+    <style type = "text/css">
+     div { background: rgba(200, 54, 54, 0.5) height: 100%; }
+    </style>
+
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<title>Sign up | Maverick</title>
+  </head>
+  <body bgcolor="#00688b">
+	<h1 align="center">
+      <img src = "Maverick_w.png">
+    </h1>
+
+    <script type = "text/javascript" src = validate.js></script>
+
+    <form align="center" name="signup" action="signup.php" method="post" onsubmit="return checkForm(this);">
+      <p><font color = "#f5f5f5">Username:</font>      <input type="text"     name="Username"  class="input" id="user"></p>
+      <p><font color = "#f5f5f5">Password:</font>      <input type="password" name="Password1" class="input" id="pwd1"></p>
+      <p><font color = "#f5f5f5">Password Again:</font><input type="password" name="Password2" class="input" id="pwd2"></p>
+      <a onclick="javascript:document.signup.submit()"><img src="signup.png"></a>
+	</form>
+
+	<div id="bottom">
+	  <form name="login_s" action = "http://maverick.taomee.net/output/login.php">
+		<a onclick="javascript:document.login_s.submit()"><img src="login_s.png"></a>
+	  </form>
+	</div>
+
+  </body>
+</html>
