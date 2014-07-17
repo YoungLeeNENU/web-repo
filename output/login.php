@@ -15,30 +15,52 @@ require_once("./cookie.php");
 
 <html>
   <head>
+
+    <link rel="shortcut icon" href="maverickico.ico" type="image/x-icon" />
+
     <style type = "text/css">body{
-    padding:0;  
-    margin:0;  
-    overflow-x: hidden;  
-    background:url(air.jpg) center no-repeat;  
-    background-size:cover;}</style>
+       padding:0;
+       margin:0;
+       overflow-x: hidden;
+       background:url(air.jpg) center no-repeat;
+       background-size:cover;}</style>
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 	<title>Log in | Maverick</title>
-  </head>
-	<h1 align="center">
-    <img src = "Maverick_w.png">
-    </h1>
 
-    <form align="center" name="login" action="login.php" method="post">
-      <p><font color = "#f5f5f5">Username:</font><input type="text"     name="Username" class="input" id="user"></p>
-      <p><font color = "#f5f5f5">Password:</font><input type="password" name="Password" class="input" id="pwd"></p>
-      <a onclick="javascript:document.login.submit()"><img src="login.png"></a>
-    </form>
-    
-    <form name="signup_s" action = "http://maverick.taomee.net/output/signup.php">
-      <a onclick="javascript:document.signup_s.submit()"><img src="signup_s.png"></a>
-    </form>
+  </head>
+
+  <body>
+
+	<div id="page">
+
+	  <div id="siteid" align="center" style="margin-top:5cm">
+		<h1 align="center">
+		  <img src = "Maverick_w.png">
+		</h1>
+	  </div>
+
+	  <div id="login" align="center">
+		<form align="center" name="login" action="login.php" method="post">
+		  <p>
+			<input type="text" style="width:205px; height:33px; background:#fff8dc" name="Username" class="input" id="user" placeholder="Username">
+		  </p>
+		  <p>
+			<input type="password" style="width:205px; height:33px; background:#fff8dc" name="Password" class="input" id="pwd" placeholder="Password">
+		  </p>
+		  <a onclick="javascript:document.login.submit()"><img src="login.png"></a>
+		</form>
+	  </div>
+
+	  <div id="signup" style="margin-left:1.5cm; margin-top:11.3cm">
+		<form name="signup_s" action = "http://maverick.taomee.net/output/signup.php">
+		  <a onclick="javascript:document.signup_s.submit()"><img src="signup_s.png"></a>
+		</form>
+	  </div>
+
+	</div>
 
   </body>
+
 </html>
     
 <?php
